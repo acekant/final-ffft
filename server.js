@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Define the route to handle the API request
 app.get("/",(req,res)=>{
